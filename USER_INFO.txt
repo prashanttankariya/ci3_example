@@ -1,0 +1,20 @@
+
+
+
+
+
+
+							USER
+							------
+
+
+							ID
+							NAME
+							EMAIL
+							CONTACT
+							PASSWORD
+							REMEMBER_TOKEN
+							OTP
+							OTP_VERIFIED
+							CREATED_AT
+							UPDATED_AT
