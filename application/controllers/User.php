@@ -21,8 +21,7 @@
       public function index()
     	{
           $data = [
-                'user' => $this->user_model->getData(),
-                'all'  => $this->user_model->all()
+                'user' => $this->user_model->getData()
           ];
           $this->load->view('users/viewUsers',$data);
     	}
