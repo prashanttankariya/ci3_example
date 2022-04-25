@@ -16,10 +16,10 @@
 
       <div class="row">
           <div class="col-md-10">
-              <h1>View All users</h1>
+            <h1>View All users : <span> <?php echo $all; ?> </span></h1>
           </div>
           <div class="col-md-2">
-              <a href="addNewUserForm" class="btn btn-info">Add New User</a>
+              <a href="user/add" class="btn btn-info">Add New User</a>
           </div>
       </div>
 
@@ -53,8 +53,8 @@
                         <td><?php echo $uv['contact']; ?></td>
                         <td><?php echo $uv['created_at']; ?></td>
                         <td>
-                          <a href="<?php echo base_url('user/edit/'.$uv['id']); ?>" class="btn btn-sm btn-success">Edit</a>
-                          <a href="<?php echo base_url('user/remove/'.$uv['id']); ?>" class="btn btn-sm btn-danger">Delete</a>
+                          <a href="<?php echo 'user/edit/'.$uv['id']; ?>" class="btn btn-sm btn-success">Edit</a>
+                          <a href="<?php echo 'user/remove/'.$uv['id']; ?>" class="btn btn-sm btn-danger">Delete</a>
                         </td>
                     </tr>
 

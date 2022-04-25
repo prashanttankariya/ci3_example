@@ -17,12 +17,21 @@
 
       public function getData()
       {
-          // return ['user'=> 'prashant','age' => 25];
           //now select data from database
           $this->db->select('*');
           $this->db->from('user');
           $objQuery = $this->db->get();
           return $objQuery->result_array();
+      }
+
+
+      public function all()
+      {
+          //now select data from database
+          $this->db->select('*');
+          $this->db->from('user');
+          $objQuery = $this->db->get();
+          return $objQuery->num_rows();
 
       }
 
